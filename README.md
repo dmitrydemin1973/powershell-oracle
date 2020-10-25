@@ -2,7 +2,7 @@
 
 run_export_all_tables.ps1 
 
-.SYNOPSIS
+**.SYNOPSIS**
 
   The script exports all user tables to separate CSV files.
   
