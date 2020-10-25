@@ -30,7 +30,7 @@
   
 **.PARAMETER  log_file**
 
-    Specify the  log file for this script.  
+  Specify the  log file for this script.  
   
 **.EXAMPLE**
 
@@ -57,16 +57,16 @@ The script exports all user tables to separate CSV files.
 
 **.PARAMETER password**
 
-    Specify the password  for example TIGER
+   Specify the password  for example TIGER
 
 **.PARAMETER connect_string**
     
-    Specify the connect_string(TNS alias)  for connect to database from $ORACLE_HOME/network/admin/tnsnames.ora.  
+   Specify the connect_string(TNS alias)  for connect to database from $ORACLE_HOME/network/admin/tnsnames.ora.  
 
  **.EXAMPLE**
  
-     This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
+   This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
      
-    .\run_export_dir_tables.ps1 -username SCOTT -password tiger -connect_string ORCL
+   .\run_export_dir_tables.ps1 -username SCOTT -password tiger -connect_string ORCL
 
 
