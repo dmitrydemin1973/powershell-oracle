@@ -17,6 +17,6 @@ run_export_all_tables.ps1
   Specify the csv directory for csv files
 .PARAMETER  log_file
   Specify the  log file for this script.  
-.EXAMPLE
-  The script exports all user tables to separate CSV files.
+.EXAMPLE 
+The script exports all user tables to separate CSV files.
   .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -csv_dir_path C:\upwork\powershell_sqlplus_export_csv\csv\  -log_file log_file.log
