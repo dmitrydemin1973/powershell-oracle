@@ -32,7 +32,7 @@ run_export_all_tables.ps1
 
   Specify the  log file for this script.  
   
-**.EXAMPLE **
+**.EXAMPLE**
 
 The script exports all user tables to separate CSV files.
 
