@@ -30,7 +30,7 @@
   
 **.PARAMETER  log_file**
 
-  Specify the  log file for this script.  
+    Specify the  log file for this script.  
   
 **.EXAMPLE**
 
