@@ -1,5 +1,31 @@
 # powershell-oracle
 
+# analyze_oracle_error_log.ps1
+
+**.SYNOPSIS**
+
+     Sql error counting
+     
+     Author: Dmitry Demin dmitrydemin1973@gmail.com
+     
+**.DESCRIPTION**
+
+    The function calculates sql errors in the log file. Combines and counts errors by error codes.
+    
+**.PARAMETER Input_File**
+    
+    Specify the path to the log file for analyze 
+    
+**.PARAMETER Output_File**
+
+    Specify the path to the output log file 
+    
+ **.EXAMPLE**
+ 
+    Sql error counting from inputfile to a outputfile:
+    
+    .\analyze_oracle_error_log.ps1 -Input_File  "C:\log_file.log" -Output_File "C:\count_error_log.log"
+
 # run_export_all_tables.ps1 
 
 **<.SYNOPSIS**
