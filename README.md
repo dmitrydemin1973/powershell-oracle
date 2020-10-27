@@ -4,27 +4,27 @@
 
 **.SYNOPSIS**
 
-     Sql error counting
+ Sql error counting
      
-     Author: Dmitry Demin dmitrydemin1973@gmail.com
+ Author: Dmitry Demin dmitrydemin1973@gmail.com
      
 **.DESCRIPTION**
 
-    The function calculates sql errors in the log file. Combines and counts errors by error codes.
+  The function calculates sql errors in the log file. Combines and counts errors by error codes.
     
 **.PARAMETER Input_File**
     
-    Specify the path to the log file for analyze 
+  Specify the path to the log file for analyze 
     
 **.PARAMETER Output_File**
 
-    Specify the path to the output log file 
+ Specify the path to the output log file 
     
  **.EXAMPLE**
  
-    Sql error counting from inputfile to a outputfile:
+ Sql error counting from inputfile to a outputfile:
     
-    .\analyze_oracle_error_log.ps1 -Input_File  "C:\log_file.log" -Output_File "C:\count_error_log.log"
+ .\analyze_oracle_error_log.ps1 -Input_File  "C:\log_file.log" -Output_File "C:\count_error_log.log"
 
 # run_export_all_tables.ps1 
 
