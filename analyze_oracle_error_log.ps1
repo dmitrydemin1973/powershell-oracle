@@ -24,9 +24,6 @@ param(
 [string]$output_file = "count_error_log.log"
 )
 
-#
-#
-#$full_log_path="C:\upwork\powershell_analyze_error_v2\log_analyze_file.log"
 
 $full_log_path=$output_file
 
@@ -114,8 +111,6 @@ if ($sqlOutput_tab_ignored_error.count -gt 0)
 
  }
 }
-#Write-Output  "Count Errors :  $($sqlOutput_tab_error.count) "
-
 
 $hashErrors = @{}
 
@@ -143,8 +138,6 @@ Write-Host "-------------------------------------List other Error---------------
               echo "Error: $_, Count : $($hashErrors.Item($_))" >>$full_log_path
       }
 
-#      Write-Output $sqlOutput_tab_error        
-#      echo   $sqlOutput_tab_error >>$full_log_path
 Write-Host "-----------------------------------------------------------------------------------------------------"
       echo "-----------------------------------------------------------------------------------------------------" >> $full_log_path 
   Write-Host "User $user_tab script completed with errors!"
