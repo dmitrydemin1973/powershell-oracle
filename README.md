@@ -24,7 +24,7 @@
  
  Sql error counting from inputfile to a outputfile:
     
- .\analyze_oracle_error_log.ps1 -Input_File  "C:\log_file.log" -Output_File "C:\count_error_log.log"
+    .\analyze_oracle_error_log.ps1 -Input_File  "C:\log_file.log" -Output_File "C:\count_error_log.log"
 
 # run_export_all_tables.ps1 
 
@@ -62,7 +62,7 @@
 
 The script exports all user tables to separate CSV files.
 
-  .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -csv_dir_path C:\upwork\powershell_sqlplus_export_csv\csv\  -log_file log_file.log
+    .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -csv_dir_path C:\upwork\powershell_sqlplus_export_csv\csv\  -log_file log_file.log
 >
 
 # run_export_dir_tables.ps1
@@ -93,6 +93,6 @@ The script exports all user tables to separate CSV files.
  
    This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
      
-   .\run_export_dir_tables.ps1 -username SCOTT -password tiger -connect_string ORCL
+     .\run_export_dir_tables.ps1 -username SCOTT -password tiger -connect_string ORCL
 
 
