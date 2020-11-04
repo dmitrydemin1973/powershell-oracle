@@ -1,4 +1,4 @@
-# powershell-oracle 1
+# powershell-oracle 
 
 # analyze_oracle_error_log.ps1
 
