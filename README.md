@@ -1,13 +1,13 @@
-# powershell-oracle
+# powershell-oracle 1
 
 # analyze_oracle_error_log.ps1
 
 **.SYNOPSIS**
 
  Sql error counting
-     
+  
  Author: Dmitry Demin dmitrydemin1973@gmail.com
-     
+   
 **.DESCRIPTION**
 
   The function calculates sql errors in the log file. Combines and counts errors by error codes.
@@ -28,7 +28,7 @@
 
 # run_export_all_tables.ps1 
 
-**<.SYNOPSIS**
+**.SYNOPSIS**
 
   The script exports all user tables to separate CSV files.
   
@@ -70,7 +70,7 @@ The script exports all user tables to separate CSV files.
 **.SYNOPSIS**
 
    This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
-     
+  
    Author: Dmitry Demin dmitrydemin1973@gmail.com
 
 **.DESCRIPTION**
