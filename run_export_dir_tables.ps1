@@ -7,40 +7,50 @@
      In the script, the format for displaying the date and decimal separator is configured.
 
     .PARAMETER username
-    Specify the username  for example SCOTT
+     Specify the username  for example SCOTT
 
     .PARAMETER password
-    Specify the password  for example TIGER
+     Specify the password  for example TIGER
 
     .PARAMETER connect_string
-    Specify the connect_string(TNS alias)  for connect to database from $ORACLE_HOME/network/admin/tnsnames.ora.  
+     Specify the connect_string(TNS alias)  for connect to database from $ORACLE_HOME/network/admin/tnsnames.ora.  
+
+    .PARAMETER sql_path
+
+     Specify the directory for executing sql scripts.
+
+    .PARAMETER csv_path
+
+     Specify the directory for output csv.
+
+    .PARAMETER log_path
+
+     Specify the log file.
 
     .EXAMPLE
      This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
-    .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL
+    .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -sql_path C:\export\sql\  -csv_path C:\export\csv\
 #>
 
 
 param(
 [string]$username = "scott", 
 [string]$password = "tiger",
-#[string]$connect_string = "server2003ora10:1521/ORCL"
 [string]$connect_string = "192.168.0.166:1521/TEST",
-[string]$define_var = "id=1,SPNAME='Joe'"
+[string]$sql_path="C:\upwork\powershell_sqlplus_export_csv\sql\",
+[string]$csv_path="C:\upwork\powershell_sqlplus_export_csv\csv\",
+[string]$log_path="C:\upwork\powershell_sqlplus_export_csv\log_file.log"
 )
 # Column separator for csv file 
 $COLSEP=";"
 # NLS_NUMERIC_CHARACTERS
 $NLS_NUMERIC_CHARACTERS=".,"
 $NLS_DATE_FORMAT="DD.MM.YYYY HH24:MI:SS"
+#[string]$connect_string = "server2003ora10:1521/ORCL"
 # Log file 
-$full_log_path="C:\upwork\powershell_sqlplus_export_csv\log_file.log"
-# CSV directory
-#$full_csv_path="C:\upwork\powershell_sqlplus_export_csv\csv\"
-$full_csv_path="C:\Users\Dmitry\Desktop\TestFolder\SQL Files\output\"
-#SQL file for export
-#$full_sql_path="C:\upwork\powershell_sqlplus_export_csv\sql\"
-$full_sql_path="C:\Users\Dmitry\Desktop\TestFolder\SQL Files\"
+$full_sql_path=$sql_path
+$full_csv_path=$csv_path
+$full_log_path=$log_path
 #csv file extension
 $csv_ext=".csv"
 #Set NLS_LANG for session sqlplus 
@@ -48,7 +58,7 @@ $csv_ext=".csv"
 #"RUSSIAN_CIS.CL8MSWIN1251"
 #"AMERICAN_AMERICA.UTF8"
 #$NLS_LANG="RUSSIAN_CIS.CL8MSWIN1251"
-$NLS_LANG="AMERICAN_AMERICA.WE8MSWIN1252"
+$NLS_LANG="AMERICAN_AMERICA.CL8MSWIN1251"
 #$NLS_LANG="AMERICAN_AMERICA.UTF8"
 
 #Set NLS_LANG for session sqlplus 

@@ -89,6 +89,18 @@ The script exports all user tables to separate CSV files.
     
    Specify the connect_string(TNS alias)  for connect to database from $ORACLE_HOME/network/admin/tnsnames.ora.  
 
+**PARAMETER sql_path**
+
+   Specify the directory for executing sql scripts.
+
+**.PARAMETER csv_path**
+
+   Specify the directory for output csv.
+
+**.PARAMETER log_path**
+
+   Specify the log file.
+
  **.EXAMPLE**
  
    This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
