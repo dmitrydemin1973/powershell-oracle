@@ -69,7 +69,7 @@ The script exports all user tables to separate CSV files.
 
 **.SYNOPSIS**
 
-   This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
+   This script executes all sql files from the specified directory and creates separate csv files for all tables in a specified directory.
   
    Author: Dmitry Demin dmitrydemin1973@gmail.com
 
