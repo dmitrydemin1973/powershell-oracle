@@ -149,6 +149,6 @@ The script exports all user tables to separate CSV files.
    
 **.EXAMPLE**
 
-   This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
+   This script executes all sql files from the specified directory and creates separate log files in a specified directory.
    
           .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -sql_path C:\export\sql\  -logs_path  C:\export\log\log_file.log
