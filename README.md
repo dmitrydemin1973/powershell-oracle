@@ -143,7 +143,7 @@ The script exports all user tables to separate CSV files.
    
    Specify the directory for output log.
       
-**.PARAMETER log_file
+**.PARAMETER log_file**
    
    Specify the log file.
    
