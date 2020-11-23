@@ -63,6 +63,8 @@ $csv_ext=".log"
 #"AMERICAN_AMERICA.UTF8"
 #$NLS_LANG="RUSSIAN_CIS.CL8MSWIN1251"
 $NLS_LANG="AMERICAN_AMERICA.CL8MSWIN1251"
+$WHENEVER = 'WHENEVER SQLERROR EXIT SQL.SQLCODE'
+#$WHENEVER = 'WHENEVER SQLERROR CONTINUE '
 #$NLS_LANG="AMERICAN_AMERICA.UTF8"
 
 #Set NLS_LANG for session sqlplus 
@@ -158,7 +160,7 @@ exit
 
 #chcp 1251
 
-$sqlQuery_show_table_all=$SqlQueryExportTable1
+$sqlQuery_show_table_all=$SqlQueryExportTable1 + "`n"+ $WHENEVER + "`n"
 
 $files_input = Get-Childitem -File $full_sql_path  
 
@@ -183,6 +185,11 @@ foreach ($file_input in $files_input)
 
 $sqlQuery_show_table_all=$sqlQuery_show_table_all+$SqlQueryExportTable2
 $sqlOutput_tab = $sqlQuery_show_table_all | sqlplus  $username/$password@$connect_string
+
+if ($LastExitCode  -ne 0)
+{
+echo "SQLPLUS failed. Oracle error code ORA-$LastExitCode " | tee-object -Append  -filepath $full_log_path
+}
 
 Out-File -filepath $full_csv_path_file -append -inputobject $sqlOutput_tab -encoding default
 
