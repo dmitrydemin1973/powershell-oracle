@@ -24,11 +24,11 @@
 
     .PARAMETER logs_path
 
-     Specify the directory for output log.
+     Specify the directory for output sqlplus log.
 
     .PARAMETER log_file
 
-     Specify the log file.
+     Specify the log file for this scripts.
 
     .EXAMPLE
      This script executes all sql files from the specified directory and creates separate csv files in a specified directory.
