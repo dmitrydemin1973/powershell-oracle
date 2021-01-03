@@ -157,12 +157,12 @@ The script exports all user tables to separate CSV files.
 # add_prompt_file_names.ps1
  **.SYNOPSIS**
  
-   This script adds PROMPT sql file names to sql file before call sql script.
+   This script adds sqlplus command PROMPT sql file names to sql file before call sql script.
    Author: Dmitry Demin dmitrydemin1973@gmail.com
     
  **.DESCRIPTION**
     
-   This script adds PROMPT sql file names to sql file before call sql script.
+   This script adds sqlplus command PROMPT sql file names to sql file before call sql script.
     
  **.PARAMETER sql_file_input**
     
