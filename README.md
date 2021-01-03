@@ -157,27 +157,27 @@ The script exports all user tables to separate CSV files.
 # add_prompt_file_names.ps1
  **.SYNOPSIS**
  
-    This script adds PROMPT sql file names to sql file before call sql script.
-    Author: Dmitry Demin dmitrydemin1973@gmail.com
+   This script adds PROMPT sql file names to sql file before call sql script.
+   Author: Dmitry Demin dmitrydemin1973@gmail.com
     
  **.DESCRIPTION**
     
-     This script adds PROMPT sql file names to sql file before call sql script.
+   This script adds PROMPT sql file names to sql file before call sql script.
     
  **.PARAMETER sql_file_input**
     
-     Specify the input sql script.
+   Specify the input sql script.
      
  **.PARAMETER sql_file_output**
  
-     Specify the output sql script.
+   Specify the output sql script.
      
  **.PARAMETER log_file**
  
-     Specify the log file.
+   Specify the log file.
      
  **.EXAMPLE**
   
-     This script adds PROMPT sql file names to sql file before call sql script.
+   This script adds PROMPT sql file names to sql file before call sql script.
      
     .\add_prompt_file_names.ps1  -sql_file_input .\sql\start.sql -sql_file_output .\sql\start_prompt.sql -log_file log_file.log
