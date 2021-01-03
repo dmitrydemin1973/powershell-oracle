@@ -152,3 +152,32 @@ The script exports all user tables to separate CSV files.
    This script executes all sql files from the specified directory and creates separate log files in a specified directory.
    
           .\run_export_all_tables.ps1 -username SCOTT -password tiger -connect_string ORCL -sql_path C:\export\sql\  -logs_path  C:\export\log\log_file.log
+
+
+# add_prompt_file_names.ps1
+ **.SYNOPSIS**
+ 
+    This script adds PROMPT sql file names to sql file before call sql script.
+    Author: Dmitry Demin dmitrydemin1973@gmail.com
+    
+ **.DESCRIPTION**
+    
+     This script adds PROMPT sql file names to sql file before call sql script.
+    
+ **.PARAMETER sql_file_input**
+    
+     Specify the input sql script.
+     
+ **.PARAMETER sql_file_output**
+ 
+     Specify the output sql script.
+     
+ **.PARAMETER log_file**
+ 
+     Specify the log file.
+     
+ **.EXAMPLE**
+  
+     This script adds PROMPT sql file names to sql file before call sql script.
+     
+    .\add_prompt_file_names.ps1  -sql_file_input .\sql\start.sql -sql_file_output .\sql\start_prompt.sql -log_file log_file.log
