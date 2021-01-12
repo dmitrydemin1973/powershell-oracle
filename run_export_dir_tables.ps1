@@ -80,6 +80,7 @@ SET UNDERLINE OFF
 set trimspool on
 set timing off
 set echo off
+set numwidth 30
 set linesize 10000
 set pagesize 0
 SET COLSEP '$COLSEP'
